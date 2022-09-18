@@ -1,0 +1,25 @@
+.summary {
+  text-align: center;
+  background-color: rgb(135, 243, 130);
+  border-radius: 14px;
+  color: rgb(0, 55, 110);
+  font-weight: bold;
+}
+
+.summary__header {
+  font-size: 1.5rem;
+}
+
+.summary__description {
+  font-size: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .summary__header {
+    font-size: 1.9rem;
+  }
+
+  .summary__description {
+    font-size: 1.5rem;
+  }
+}
