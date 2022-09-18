@@ -1,9 +1,8 @@
-import { Fragment } from "react";
 import classes from "./Header.module.css";
-import HeaderFallBackImage from "../../assets/HeaderImage.jpg";
-import HeaderImageOptJPG from "../../assets/HeaderImage.jpg";
-import HeaderImageWEBP from "../../assets/HeaderImage.jpg";
-import HeaderImageOptWEBP from "../../assets/HeaderImageOpt.webp";
+import HeaderFallBackImage from "../../assets/hero/HeaderImage.jpg";
+import HeaderImageOptJPG from "../../assets/hero/HeaderImage.jpg";
+import HeaderImageWEBP from "../../assets/hero/HeaderImage.jpg";
+import HeaderImageOptWEBP from "../../assets/hero/HeaderImageOpt.webp";
 
 const Header = ({ logo }) => {
   return (
