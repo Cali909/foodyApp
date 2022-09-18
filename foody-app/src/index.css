@@ -9,3 +9,19 @@ body {
   padding: 0;
   font-family: "Baskervville", serif;
 }
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 678px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
