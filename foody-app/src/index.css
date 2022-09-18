@@ -20,8 +20,21 @@ body {
   grid-template-columns: 1fr;
 }
 
+.btn {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  padding: 0.35rem 1.75rem;
+  border-radius: 35px;
+  font-weight: bold;
+}
+
 @media (min-width: 678px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .btn {
+    padding: 0.5rem 3rem;
   }
 }

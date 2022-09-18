@@ -3,13 +3,14 @@ import HeaderFallBackImage from "../../assets/hero/HeaderImage.jpg";
 import HeaderImageOptJPG from "../../assets/hero/HeaderImage.jpg";
 import HeaderImageWEBP from "../../assets/hero/HeaderImage.jpg";
 import HeaderImageOptWEBP from "../../assets/hero/HeaderImageOpt.webp";
+import HeaderCartButton from "./HeaderCartButton";
 
 const Header = ({ logo }) => {
   return (
     <div className="container">
       <header className={classes.header}>
         <h1 className={classes.logo}>{logo}</h1>
-        <button>Cart</button>
+        <HeaderCartButton />
       </header>
       <div className={classes["main-image"]}>
         <picture>

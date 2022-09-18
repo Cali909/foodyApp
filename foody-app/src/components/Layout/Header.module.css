@@ -16,6 +16,8 @@
 
 .logo {
   font-size: 2rem;
+  transform: scale(1.1);
+  font-weight: bold;
 }
 
 .main-image {
