@@ -40,7 +40,7 @@ function App() {
 
   return (
     <Fragment>
-      <Cart />
+      {/* <Cart /> */}
       <Header logo={"Foody"} />
       <main>
         <Summary />

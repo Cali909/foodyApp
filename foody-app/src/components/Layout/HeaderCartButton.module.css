@@ -25,6 +25,7 @@
   font-weight: bold;
   font-size: 1rem;
   transition: all 0.25s;
+  font-family: serif;
 }
 
 .cart--btn:hover .badge,

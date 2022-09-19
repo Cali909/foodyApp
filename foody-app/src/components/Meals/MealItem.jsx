@@ -1,7 +1,17 @@
 import Card from "./../UI/Card";
 import classes from "./MealItem.module.css";
+import { useSelector, useDispatch } from "react-redux";
+// import { cartActions } from "./../../store/index";
 
 const MealItem = (props) => {
+  useSelector((state) => state.cart);
+  const dispatch = useDispatch();
+  const handleInitialOrder = (mealId) => {
+    // const wantedMeal = props;
+    // dispatch(cartActions.addToCart(wantedMeal));
+    console.log(mealId);
+  };
+
   return (
     <Card>
       <li>
@@ -12,7 +22,12 @@ const MealItem = (props) => {
           <h3 className={classes.name}>{props.name}</h3>
           <h4 className={classes.description}>{props.description}</h4>
           <div className={classes.price}>${props.price}</div>
-          <button className={`${classes["order--btn"]} btn`}>Order</button>
+          <button
+            className={`${classes["order--btn"]} btn`}
+            onClick={() => handleInitialOrder(props.id)}
+          >
+            Order
+          </button>
         </div>
       </li>
     </Card>
