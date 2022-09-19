@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap");
 
+::selection {
+  background-color: skyblue;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -8,6 +12,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Baskervville", serif;
+}
+
+ul {
+  list-style: none;
 }
 
 .container {
@@ -37,4 +45,13 @@ body {
   .btn {
     padding: 0.5rem 3rem;
   }
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.loading-error {
+  color: red;
+  font-size: 3rem;
 }

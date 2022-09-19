@@ -4,6 +4,7 @@
   border-radius: 14px;
   color: rgb(0, 55, 110);
   font-weight: bold;
+  margin: 0.25rem auto 3rem;
 }
 
 .summary__header {

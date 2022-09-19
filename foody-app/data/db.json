@@ -4,55 +4,64 @@
       "id": "meal-1",
       "name": "Chorizo & mozzarella gnocchi bake",
       "description": "Upgrade cheesy tomato pasta with gnocchi, chorizo and mozzarella for a comforting bake that makes an excellent midweek meal",
-      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?resize=960,872?quality=90&webp=true&resize=375,341"
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?resize=960,872?quality=90&webp=true&resize=375,341",
+      "price": 13
     },
     {
       "id": "meal-2",
       "name": "Butter chicken",
       "description": "Fancy a healthy version of your favourite Friday night curry? Try our easy butter chicken",
-      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/butter-chicken-cf6f9e2.jpg?resize=960,872?quality=90&webp=true&resize=375,341"
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/butter-chicken-cf6f9e2.jpg?resize=960,872?quality=90&webp=true&resize=375,341",
+      "price": 19
     },
     {
       "id": "meal-3",
       "name": "Classic lasagne",
       "description": "Kids will love this easiest ever pasta bake with streaky bacon, beef mince, a crème fraîche sauce and gooey mozzarella",
-      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/classic-lasange-4a66137.jpg?resize=960,872?quality=90&webp=true&resize=375,341"
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/classic-lasange-4a66137.jpg?resize=960,872?quality=90&webp=true&resize=375,341",
+      "price": 10
     },
     {
       "id": "meal-4",
       "name": "Teriyaki chicken",
       "description": "Sticky Asian-style teriyaki chicken, Try it with sticky rice and steamed greens",
-      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/easy-teriyaki-c845724.jpg?resize=960,872?quality=90&webp=true&resize=375,341"
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/easy-teriyaki-c845724.jpg?resize=960,872?quality=90&webp=true&resize=375,341",
+      "price": 16
     },
     {
       "id": "meal-5",
       "name": "Thai fried prawn & pineapple rice",
       "description": "Low calorie supper",
-      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/thai-aea8468.jpg?resize=960,872?quality=90&webp=true&resize=375,341"
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/thai-aea8468.jpg?resize=960,872?quality=90&webp=true&resize=375,341",
+      "price": 12
     },
     {
       "id": "meal-6",
       "name": "One-pan spaghetti with nduja, fennel & olives",
       "description": "A spicy sausage pasta dish with a difference. Using the cooking water helps the sauce cling to the pasta and gives the dish more body",
-      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/one-pan-spaghetti-with-nduja-fennel-olives-2308fb3.jpg?resize=960,872?quality=90&webp=true&resize=375,341"
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/one-pan-spaghetti-with-nduja-fennel-olives-2308fb3.jpg?resize=960,872?quality=90&webp=true&resize=375,341",
+      "price": 10
     },
     {
       "id": "meal-7",
       "name": "Meatballs",
       "description": "Meatballs on spaghetti with hidden vegetable tomato sauce",
-      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/meatballs-main-b401430.jpg?resize=960,872?quality=90&webp=true&resize=375,341"
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/meatballs-main-b401430.jpg?resize=960,872?quality=90&webp=true&resize=375,341",
+      "price": 12
     },
     {
       "id": "meal-8",
       "name": "Chicken curry",
       "description": "This easy staple chicken curry is fantastic for family dinners. It's made with just a handful of ingredients and is enriched with creamy yogurt",
-      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/easy-chicken-curry-aa22a0b.jpg?resize=960,872?quality=90&webp=true&resize=375,341"
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/easy-chicken-curry-aa22a0b.jpg?resize=960,872?quality=90&webp=true&resize=375,341",
+      "price": 18
     },
     {
       "id": "meal-9",
       "name": " Treacle sponge",
       "description": "A simple baked version of this classic childhood pudding, with a zesty treacle sauce forming an irresistible puddle at the bottom",
-      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-908547_11-e97e641.jpg?resize=960,872?quality=90&webp=true&resize=375,341"
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-908547_11-e97e641.jpg?resize=960,872?quality=90&webp=true&resize=375,341",
+      "price": 16
     }
   ]
 }
