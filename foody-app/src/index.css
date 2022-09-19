@@ -35,6 +35,8 @@ ul {
   padding: 0.35rem 1.75rem;
   border-radius: 35px;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: 678px) {

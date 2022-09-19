@@ -1,0 +1,46 @@
+.item {
+  border-bottom: 1px solid #ccc;
+  margin: 1rem;
+  padding: 0.75rem;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+
+.item__amount {
+  font-family: serif;
+}
+
+.actions {
+  display: flex;
+}
+
+.actions > button {
+  margin: 0.5rem;
+  background-color: rgb(249, 224, 0);
+  transition: all 0.5s;
+}
+
+.actions > button:hover {
+  background-color: rgb(174, 209, 0);
+}
+
+@media (min-width: 768px) {
+  .item {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .content {
+    font-size: 1.3rem;
+  }
+
+  .content > div {
+    margin-right: 12rem;
+  }
+}

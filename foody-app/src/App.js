@@ -3,6 +3,7 @@ import { Fragment, useEffect, useState } from "react";
 import Header from "./components/Layout/Header";
 import Summary from "./components/Layout/Summary";
 import MealsList from "./components/Meals/MealsList";
+import Cart from "./components/Cart/Cart";
 
 function App() {
   const [meals, setMeals] = useState([]);
@@ -39,6 +40,7 @@ function App() {
 
   return (
     <Fragment>
+      <Cart />
       <Header logo={"Foody"} />
       <main>
         <Summary />

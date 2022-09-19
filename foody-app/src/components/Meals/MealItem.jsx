@@ -6,7 +6,7 @@ const MealItem = (props) => {
     <Card>
       <li>
         <div>
-          <img className={classes.img} src={props.image} />
+          <img className={classes.img} src={props.image} alt={props.name} />
         </div>
         <div className={classes["meal-item"]}>
           <h3 className={classes.name}>{props.name}</h3>
