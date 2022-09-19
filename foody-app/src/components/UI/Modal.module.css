@@ -18,4 +18,23 @@
   padding: 1rem;
   background-color: #fff;
   border-radius: 14px;
+  animation: slide-down 0.35s ease-out forwards;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    width: 60%;
+    left: 20%;
+  }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

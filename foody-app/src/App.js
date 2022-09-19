@@ -10,6 +10,8 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
+  const [cartIsShown, setCartIsShown] = useState(false);
+
   const fetchMeals = async () => {
     try {
       setIsLoading(true);
@@ -27,6 +29,13 @@ function App() {
     fetchMeals();
   }, []);
 
+  const handleShowCart = () => {
+    setCartIsShown(true);
+  };
+  const handleHideCart = () => {
+    setCartIsShown(false);
+  };
+
   let content = <p>No Meals Found</p>;
   if (meals.length > 0) {
     content = <MealsList meals={meals} />;
@@ -40,8 +49,8 @@ function App() {
 
   return (
     <Fragment>
-      {/* <Cart /> */}
-      <Header logo={"Foody"} />
+      {cartIsShown && <Cart onHideCart={handleHideCart} />}
+      <Header logo={"Foody"} onShowCart={handleShowCart} />
       <main>
         <Summary />
         {content}

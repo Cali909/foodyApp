@@ -7,10 +7,10 @@ const cartItems = [
   { id: "2", name: "me", amount: 5 },
 ];
 
-const Cart = () => {
+const Cart = ({ onHideCart }) => {
   return (
     <section className={`${classes.cart} container`}>
-      <Modal>
+      <Modal onHideCart={onHideCart}>
         <ul>
           {cartItems.map((meal) => (
             <CartItem
@@ -26,7 +26,9 @@ const Cart = () => {
         </ul>
         <div className={classes["total-price"]}>Total Price: $43</div>
         <div className={classes.actions}>
-          <button className="btn">Close</button>
+          <button className="btn" onClick={onHideCart}>
+            Close
+          </button>
           <button className="btn">Order</button>
         </div>
       </Modal>
