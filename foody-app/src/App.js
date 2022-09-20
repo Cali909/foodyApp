@@ -4,6 +4,9 @@ import Header from "./components/Layout/Header";
 import Summary from "./components/Layout/Summary";
 import MealsList from "./components/Meals/MealsList";
 import Cart from "./components/Cart/Cart";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { cartActions } from "./store";
 
 function App() {
   const [meals, setMeals] = useState([]);
@@ -12,12 +15,16 @@ function App() {
 
   const [cartIsShown, setCartIsShown] = useState(false);
 
+  const cart = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
+
   const fetchMeals = async () => {
     try {
       setIsLoading(true);
       setError(null);
       const response = await api.get("/meals");
       setMeals(response.data);
+      dispatch(cartActions.setMeals(response.data));
     } catch (err) {
       setError(`Something went wrong!
       Error status: ${err.response.status}`);
@@ -28,6 +35,12 @@ function App() {
   useEffect(() => {
     fetchMeals();
   }, []);
+
+  useEffect(() => {
+    if (cart.cartMeals.length === 0) {
+      setCartIsShown(false);
+    }
+  }, [cart.cartMeals.length]);
 
   const handleShowCart = () => {
     setCartIsShown(true);

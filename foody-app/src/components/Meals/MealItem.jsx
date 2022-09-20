@@ -1,15 +1,14 @@
 import Card from "./../UI/Card";
 import classes from "./MealItem.module.css";
 import { useSelector, useDispatch } from "react-redux";
-// import { cartActions } from "./../../store/index";
+import { cartActions } from "./../../store/index";
 
 const MealItem = (props) => {
-  useSelector((state) => state.cart);
+  const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
   const handleInitialOrder = (mealId) => {
-    // const wantedMeal = props;
-    // dispatch(cartActions.addToCart(wantedMeal));
-    console.log(mealId);
+    const wantedMeal = cart.meals.find((meal) => meal.id === mealId);
+    dispatch(cartActions.addToCart(wantedMeal));
   };
 
   return (
@@ -26,7 +25,7 @@ const MealItem = (props) => {
             className={`${classes["order--btn"]} btn`}
             onClick={() => handleInitialOrder(props.id)}
           >
-            Order
+            Add
           </button>
         </div>
       </li>
