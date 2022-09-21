@@ -1,13 +1,4 @@
-/* .item {
-  padding: 0.75rem;
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-} */
-
 .content {
-  /* display: flex;
-  justify-content: space-between;
-  font-size: 1.1rem; */
   margin: 1rem;
   border-bottom: 1px solid #ccc;
   display: grid;
@@ -40,7 +31,7 @@
 }
 
 .actions > button:hover {
-  background-color: rgb(174, 209, 0);
+  background-color: rgb(225, 203, 11);
 }
 
 @media (min-width: 768px) {
