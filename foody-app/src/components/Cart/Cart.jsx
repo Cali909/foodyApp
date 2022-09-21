@@ -9,7 +9,7 @@ const Cart = ({ onHideCart }) => {
   return (
     <section className={`${classes.cart} container`}>
       <Modal onHideCart={onHideCart}>
-        <ul>
+        <ul className={classes["meals__list"]}>
           {cart.cartMeals.map((meal) => (
             <CartItem
               key={meal.id}

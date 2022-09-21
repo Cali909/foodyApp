@@ -1,8 +1,13 @@
+.meals__list {
+  overflow-y: scroll;
+  max-height: 20rem;
+}
+
 .total-price {
   font-family: serif;
   text-align: center;
   margin: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.35rem;
 }
 
 .actions {
@@ -21,4 +26,7 @@
 }
 
 @media (min-width: 768px) {
+  .total-price {
+    font-size: 1.8rem;
+  }
 }

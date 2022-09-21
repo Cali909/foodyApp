@@ -17,26 +17,23 @@ const CartItem = (props) => {
   };
 
   return (
-    <li>
-      <div className={classes.item}>
-        <div className={classes.content}>
-          <div className={classes["item__name"]}>{props.name}</div>
-          <div className={classes["item__amount"]}>x {props.amount}</div>
-        </div>
-        <div className={classes.actions}>
-          <button
-            className={`btn`}
-            onClick={() => handleDecreaseAmount(props.id)}
-          >
-            -
-          </button>
-          <button
-            className={`btn`}
-            onClick={() => handleIncreaseAmount(props.id)}
-          >
-            +
-          </button>
-        </div>
+    <li className={classes.content}>
+      <div className={classes["item__name"]}>{props.name}</div>
+      <div className={classes["item__amount"]}>x {props.amount}</div>
+      {/* <div className={classes["item__price"]}>{props.price} per serving</div> */}
+      <div className={classes.actions}>
+        <button
+          className={`btn`}
+          onClick={() => handleDecreaseAmount(props.id)}
+        >
+          -
+        </button>
+        <button
+          className={`btn`}
+          onClick={() => handleIncreaseAmount(props.id)}
+        >
+          +
+        </button>
       </div>
     </li>
   );
