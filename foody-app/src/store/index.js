@@ -72,6 +72,11 @@ const cartSlice = createSlice({
       state.cartMeals = newCartMeals;
       state.totalAmount -= item.price;
     },
+
+    reset(state) {
+      state.cartMeals = [];
+      state.totalAmount = 0;
+    },
   },
 });
 

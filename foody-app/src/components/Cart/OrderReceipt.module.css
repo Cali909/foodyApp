@@ -1,0 +1,43 @@
+.receipt {
+  overflow-y: scroll;
+  max-height: 20rem;
+}
+
+.receipt__btn {
+  margin: auto;
+  background-color: rgb(120, 202, 202);
+  transition: all 0.25s;
+  padding: 0.7rem 2rem;
+}
+
+.receipt__btn:hover {
+  background-color: rgb(102, 179, 179);
+}
+
+.item {
+  font-size: 1.35rem;
+  border-bottom: 1px solid #ccc;
+  margin: 1.5rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item__amount {
+  font-family: serif;
+}
+
+.receipt__serial {
+  font-size: 1.1rem;
+  font-family: serif;
+}
+
+@media (min-width: 768px) {
+  .item {
+    font-size: 1.6rem;
+  }
+
+  .receipt__serial {
+    font-size: 1.35rem;
+  }
+}

@@ -1,19 +1,18 @@
 import Modal from "../UI/Modal";
 import classes from "./Cart.module.css";
 import CartItem from "./CartItem";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
-const Cart = ({ onHideCart }) => {
+const Cart = ({ onHideCart, onShowReceipt }) => {
   const cart = useSelector((state) => state.cart);
-  // const dispatch = useDispatch();
 
   const handleFinalOrder = () => {
-    //TODO: show feedback and navigate to root and show a receipt
     const orderedFood = [];
     cart.cartMeals.forEach((meal) =>
       orderedFood.push({ name: meal.name, amount: meal.amount })
     );
-    console.log(orderedFood);
+    onHideCart();
+    onShowReceipt();
   };
 
   return (

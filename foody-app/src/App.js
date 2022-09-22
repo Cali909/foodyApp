@@ -7,6 +7,7 @@ import Cart from "./components/Cart/Cart";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { cartActions } from "./store";
+import OrderReceipt from "./components/Cart/OrderReceipt";
 
 function App() {
   const [meals, setMeals] = useState([]);
@@ -14,6 +15,7 @@ function App() {
   const [error, setError] = useState(null);
 
   const [cartIsShown, setCartIsShown] = useState(false);
+  const [orderIsDone, setOrderIsDone] = useState(false);
 
   const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
@@ -49,6 +51,15 @@ function App() {
     setCartIsShown(false);
   };
 
+  const handleShowReceipt = () => {
+    setOrderIsDone(true);
+  };
+
+  const handleHideReceipt = () => {
+    setOrderIsDone(false);
+    dispatch(cartActions.reset());
+  };
+
   let content = <p>No Meals Found</p>;
   if (meals.length > 0) {
     content = <MealsList meals={meals} />;
@@ -62,7 +73,10 @@ function App() {
 
   return (
     <Fragment>
-      {cartIsShown && <Cart onHideCart={handleHideCart} />}
+      {cartIsShown && (
+        <Cart onHideCart={handleHideCart} onShowReceipt={handleShowReceipt} />
+      )}
+      {orderIsDone && <OrderReceipt onHideReceipt={handleHideReceipt} />}
       <Header logo={"Foody"} onShowCart={handleShowCart} />
       <main>
         <Summary />
