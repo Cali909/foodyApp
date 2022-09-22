@@ -1,11 +1,5 @@
-.meals-list {
-  gap: 2.5rem;
-  padding: 0 2rem;
-}
-
-.types {
+/* .types {
   width: 80%;
-  margin: auto;
 }
 
 .type__list {
@@ -23,12 +17,16 @@
   padding: 0.5rem;
 }
 
-@media (min-width: 768px) {
+/* .type__item:current {
+  animation-name: active 0.35s ease-out forwards;
+} */
+
+/* @media (min-width: 768px) {
   .type__item {
     padding: 1rem;
     font-size: 1.75rem;
   }
-}
+} */
 
 /* @keyframes active {
   from {

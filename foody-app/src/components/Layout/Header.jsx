@@ -9,6 +9,7 @@ import { useSelector } from "react-redux";
 const Header = ({ logo, onShowCart }) => {
   const cart = useSelector((state) => state.cart);
 
+  //FIXME: problem with img quality
   return (
     <div className="container">
       <header className={classes.header}>
