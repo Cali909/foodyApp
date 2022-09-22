@@ -3,7 +3,6 @@ import { createSlice, configureStore, current } from "@reduxjs/toolkit";
 const cartInitialState = {
   meals: [],
   cartMeals: [],
-  // foodVariety: 0,
   totalAmount: 0,
 };
 
