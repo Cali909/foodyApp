@@ -134,7 +134,6 @@ function App() {
       <Header logo={"Foody"} onShowCart={handleShowCart} />
       <main>
         <Summary />
-        {/* {<MealTypes onMealFilter={handleMealFilter} />} */}
         {content}
       </main>
     </Fragment>

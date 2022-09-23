@@ -5,7 +5,7 @@
 
 .types {
   width: 80%;
-  margin: auto;
+  margin: 2rem auto 5rem;
 }
 
 .type__list {
@@ -23,6 +23,10 @@
   padding: 0.5rem;
 }
 
+.active {
+  background-color: rgb(165, 217, 237);
+}
+
 @media (min-width: 768px) {
   .type__item {
     padding: 1rem;
@@ -30,11 +34,11 @@
   }
 }
 
-/* @keyframes active {
-  from {
+@keyframes active {
+  0% {
     background-color: #fff;
   }
-  to {
+  100% {
     background-color: aquamarine;
   }
-} */
+}
