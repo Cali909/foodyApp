@@ -11,7 +11,7 @@
     {
       "id": "meal-2",
       "name": "Butter chicken",
-      "description": "Fancy a healthy version of your favourite Friday night curry? Try our easy butter chicken",
+      "description": "Fancy a healthy version of your favourite Friday night curry? Try our butter chicken",
       "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/butter-chicken-cf6f9e2.jpg?resize=960,872?quality=90&webp=true&resize=375,341",
       "price": 19,
       "type1": "rice",
@@ -62,7 +62,7 @@
     {
       "id": "meal-8",
       "name": "Chicken curry",
-      "description": "This easy staple chicken curry is fantastic for family dinners. It's made with just a handful of ingredients and is enriched with creamy yogurt",
+      "description": "This staple chicken curry is fantastic for family dinners. It's made with just a handful of ingredients and is enriched with creamy yogurt",
       "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/easy-chicken-curry-aa22a0b.jpg?resize=960,872?quality=90&webp=true&resize=375,341",
       "price": 18,
       "type1": "rice",

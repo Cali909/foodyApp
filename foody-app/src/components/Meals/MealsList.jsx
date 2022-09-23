@@ -4,29 +4,10 @@ import Card from "./../UI/Card";
 import { useState, useRef } from "react";
 
 const MealsList = ({ meals, onMealFilter }) => {
-  //FIXME: refactor all this workaround and avoid tones of dupliction and bad code
-  const [selectedMeal, setSelectedMeal] = useState(null);
-  const allRef = useRef();
-  const riceRef = useRef();
-  const pastaRef = useRef();
-  const chickenRef = useRef();
-  const meatRef = useRef();
-  const dessertRef = useRef();
-  const handleActivateMeal = (type) => {
-    setSelectedMeal(null);
-    if (type === "all") {
-      setSelectedMeal(allRef.current);
-    } else if (type === "rice") {
-      setSelectedMeal(riceRef.current);
-    } else if (type === "pasta") {
-      setSelectedMeal(pastaRef.current);
-    } else if (type === "chicken") {
-      setSelectedMeal(chickenRef.current);
-    } else if (type === "meat") {
-      setSelectedMeal(meatRef.current);
-    } else if (type === "dessert") {
-      setSelectedMeal(dessertRef.current);
-    }
+  const items = [];
+  const handleActivateMeal = (index) => {
+    items.forEach((item) => item.classList.remove(classes.active));
+    items[index].classList.add(classes.active);
   };
 
   return (
@@ -35,86 +16,74 @@ const MealsList = ({ meals, onMealFilter }) => {
         <div className={classes.types}>
           <ul className={classes["type__list"]}>
             <li
-              className={
-                selectedMeal === allRef.current
-                  ? `${classes["type__item"]} ${classes.active}`
-                  : `${classes["type__item"]}`
-              }
+              className={`${classes["type__item"]}`}
               onClick={() => {
                 onMealFilter("all");
-                handleActivateMeal("all");
+                handleActivateMeal(0);
               }}
-              ref={allRef}
+              ref={(item) => {
+                items.push(item);
+              }}
             >
               All Meals
             </li>
             <li
-              className={
-                selectedMeal === riceRef.current
-                  ? `${classes["type__item"]} ${classes.active}`
-                  : `${classes["type__item"]}`
-              }
+              className={`${classes["type__item"]}`}
               onClick={() => {
                 onMealFilter("rice");
-                handleActivateMeal("rice");
+                handleActivateMeal(1);
               }}
-              ref={riceRef}
+              ref={(item) => {
+                items.push(item);
+              }}
             >
               Rice
             </li>
             <li
-              className={
-                selectedMeal === pastaRef.current
-                  ? `${classes["type__item"]} ${classes.active}`
-                  : `${classes["type__item"]}`
-              }
+              className={`${classes["type__item"]}`}
               onClick={() => {
                 onMealFilter("pasta");
-                handleActivateMeal("pasta");
+                handleActivateMeal(2);
               }}
-              ref={pastaRef}
+              ref={(item) => {
+                items.push(item);
+              }}
             >
               Pasta
             </li>
             <li
-              className={
-                selectedMeal === chickenRef.current
-                  ? `${classes["type__item"]} ${classes.active}`
-                  : `${classes["type__item"]}`
-              }
+              className={`${classes["type__item"]}`}
               onClick={() => {
                 onMealFilter("chicken");
-                handleActivateMeal("chicken");
+                handleActivateMeal(3);
               }}
-              ref={chickenRef}
+              ref={(item) => {
+                items.push(item);
+              }}
             >
               Chicken
             </li>
             <li
-              className={
-                selectedMeal === meatRef.current
-                  ? `${classes["type__item"]} ${classes.active}`
-                  : `${classes["type__item"]}`
-              }
+              className={`${classes["type__item"]}`}
               onClick={() => {
                 onMealFilter("meat");
-                handleActivateMeal("meat");
+                handleActivateMeal(4);
               }}
-              ref={meatRef}
+              ref={(item) => {
+                items.push(item);
+              }}
             >
               Meat
             </li>
             <li
-              className={
-                selectedMeal === dessertRef.current
-                  ? `${classes["type__item"]} ${classes.active}`
-                  : `${classes["type__item"]}`
-              }
+              className={`${classes["type__item"]}`}
               onClick={() => {
                 onMealFilter("dessert");
-                handleActivateMeal("dessert");
+                handleActivateMeal(5);
               }}
-              ref={dessertRef}
+              ref={(item) => {
+                items.push(item);
+              }}
             >
               Dessert
             </li>
