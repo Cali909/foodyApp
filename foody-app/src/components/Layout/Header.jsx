@@ -1,7 +1,7 @@
 import classes from "./Header.module.css";
 import HeaderFallBackImage from "../../assets/hero/HeaderImage.jpg";
 import HeaderImageOptJPG from "../../assets/hero/HeaderImage.jpg";
-import HeaderImageWEBP from "../../assets/hero/HeaderImage.jpg";
+import HeaderImageWEBP from "../../assets/hero/HeaderImage.webp";
 import HeaderImageOptWEBP from "../../assets/hero/HeaderImageOpt.webp";
 import HeaderCartButton from "./HeaderCartButton";
 import { useSelector } from "react-redux";
@@ -9,7 +9,6 @@ import { useSelector } from "react-redux";
 const Header = ({ logo, onShowCart }) => {
   const cart = useSelector((state) => state.cart);
 
-  //FIXME: problem with img quality
   return (
     <div className="container">
       <header className={classes.header}>
